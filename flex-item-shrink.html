@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Item Shrink</title>
+    <!-- Flex Item Shrink (flex-shrink) merupakan kebalikan dari flex item grow. Flex Item Shrink adalah kemampuan flex item untuk
+    menyusut ketika dibutuhkan. Kemampuan menyusut ini dibutuhkan ketika memang ukuran halaman tidak cukup -->
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+      .content {
+        background-color: beige;
+        border: 0.1rem solid black;
+        margin: 0.6rem;
+        padding: 0.6rem;
+        font-size: 3vw;
+      }
+      .content1 {
+        flex-shrink: 1;
+      }
+      .content2 {
+        flex-shrink: 2;
+      }
+      .content3 {
+        flex-shrink: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content content1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+        velit ut facilis blanditiis delectus excepturi voluptate, omnis eveniet
+        quod praesentium provident. Quisquam necessitatibus unde commodi dolore
+        sit voluptatum nemo totam!
+      </div>
+      <div class="content content2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+        provident temporibus enim neque, porro maxime rerum modi nesciunt
+        cupiditate nulla magni quis cum eos repudiandae ex rem sed esse eaque.
+      </div>
+      <div class="content content3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos facere
+        necessitatibus, possimus ab assumenda quo? Atque, eaque ex tenetur
+        dolores quae placeat iure, corporis blanditiis a autem deleniti, quis
+        quas.
+      </div>
+    </div>
+  </body>
+</html>

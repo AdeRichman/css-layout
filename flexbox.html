@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox, Flex Direction dan Flex Wrap</title>
+    <!-- Flexbox digunakan untuk menata letak, menyelaraskan, dan mendistribusikan ruang antar item dalam wadah (container)
+     dan bersifat dinamis.  -->
+    <!-- (Flex Direction)Secara default, flex item akan ditampilkan dengan arah dari kiri ke kanan, kita bisa mengubah hal tersebut
+       dengan Flex Direction-->
+    <!-- (Flex Wrap) secara default, flex item akan ditampilkan dalam satu garis, baik itu vertical (row) ataupun horizontal (column).
+     Namun jika kita ingin flex item di wrap pada garis berbeda ketika dibutuhkan, maka kita bisa gunakan atribut flex-wrap -->
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .content {
+        width: 28rem;
+        background-color: beige;
+        color: black;
+        margin: 0.6rem;
+        padding: 0.6rem;
+        border: 0.1rem solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>Ini Konten 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+          obcaecati laboriosam doloremque reiciendis, omnis alias odio accusamus
+          quisquam nemo ab neque saepe aut, iusto eveniet eligendi esse nulla
+          quidem rerum.
+        </p>
+      </div>
+      <div class="content">
+        <h1>Ini Konten 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+          obcaecati laboriosam doloremque reiciendis, omnis alias odio accusamus
+          quisquam nemo ab neque saepe aut, iusto eveniet eligendi esse nulla
+          quidem rerum.
+        </p>
+      </div>
+      <div class="content">
+        <h1>Ini Konten 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+          obcaecati laboriosam doloremque reiciendis, omnis alias odio accusamus
+          quisquam nemo ab neque saepe aut, iusto eveniet eligendi esse nulla
+          quidem rerum.
+        </p>
+      </div>
+      <div class="content">
+        <h1>Ini Konten 4</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+          obcaecati laboriosam doloremque reiciendis, omnis alias odio accusamus
+          quisquam nemo ab neque saepe aut, iusto eveniet eligendi esse nulla
+          quidem rerum.
+        </p>
+      </div>
+      <div class="content">
+        <h1>Ini Konten 5</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+          obcaecati laboriosam doloremque reiciendis, omnis alias odio accusamus
+          quisquam nemo ab neque saepe aut, iusto eveniet eligendi esse nulla
+          quidem rerum.
+        </p>
+      </div>
+      <div class="content">
+        <h1>Ini Konten 6</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+          obcaecati laboriosam doloremque reiciendis, omnis alias odio accusamus
+          quisquam nemo ab neque saepe aut, iusto eveniet eligendi esse nulla
+          quidem rerum.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

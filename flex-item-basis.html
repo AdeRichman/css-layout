@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Item Basis</title>
+    <!-- Digunakan untuk membuat flex item mengambil ruang sebesar yang ditentukan, atau jika ruangan tidak tersedia, 
+        ambil semampunya -->
+    <style>
+      .container {
+        display: flex;
+      }
+      .content {
+        background-color: beige;
+        border: 0.1rem solid black;
+        margin: 0.6rem;
+        padding: 0.6rem;
+      }
+      .content1 {
+        flex-basis: 18.75rem;
+        flex-shrink: 0;
+      }
+      .content2 {
+        flex-basis: 18.75rem;
+        flex-shrink: 0;
+      }
+      .content3 {
+        flex-basis: 18.75rem;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content content1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+        velit ut facilis blanditiis delectus excepturi voluptate, omnis eveniet
+        quod praesentium provident. Quisquam necessitatibus unde commodi dolore
+        sit voluptatum nemo totam!
+      </div>
+      <div class="content content2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+        provident temporibus enim neque, porro maxime rerum modi nesciunt
+        cupiditate nulla magni quis cum eos repudiandae ex rem sed esse eaque.
+      </div>
+      <div class="content content3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos facere
+        necessitatibus, possimus ab assumenda quo? Atque, eaque ex tenetur
+        dolores quae placeat iure, corporis blanditiis a autem deleniti, quis
+        quas.
+      </div>
+    </div>
+  </body>
+</html>

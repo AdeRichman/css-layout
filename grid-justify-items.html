@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid justify-Items</title>
+    <!-- Justify Items digunakan untuk melakukan penyelarasan yang hanya dilakukan di level grid item di dalam grid cell
+    , tanpa mengubah grid line. Main/column-->
+    <style>
+      .container {
+        display: grid;
+        height: 31.25rem;
+        background-color: grey;
+        grid-template-columns: 6.25rem 6.25rem 6.25rem;
+        grid-template-rows: 6.25rem 6.25rem 6.25rem;
+        justify-items: center;
+      }
+      .content {
+        background-color: beige;
+        border: 0.1rem solid black;
+        padding: 0.6rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">1</div>
+      <div class="content">2</div>
+      <div class="content">3</div>
+      <div class="content">4</div>
+      <div class="content">5</div>
+      <div class="content">6</div>
+      <div class="content">7</div>
+      <div class="content">8</div>
+      <div class="content">9</div>
+    </div>
+  </body>
+</html>

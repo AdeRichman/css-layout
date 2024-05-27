@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Template Area</title>
+    <!-- Grid-template-area digunakan untuk memberi nama pada cell/grid area. Sedangkan untuk memunculkan grid item muncul
+    di area mana, kita bisa gunakan atribut grid-area -->
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 6.25rem auto 6.25rem;
+        grid-template-rows: 3.125rem auto 6.25rem;
+        grid-template-areas:
+          "header header header"
+          ". content ."
+          "footer footer footer";
+      }
+      .content {
+        background-color: beige;
+        border: 0.1rem solid black;
+        margin: 0.6rem;
+        padding: 0.6rem;
+        grid-area: content;
+      }
+      .header {
+        background-color: grey;
+        grid-area: header;
+        text-align: center;
+      }
+      .footer {
+        background-color: grey;
+        grid-area: footer;
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Selamat Datang di Web Petualangan</div>
+      <div class="content">
+        <h1>Ade Rachman</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid hic
+          in consequuntur doloribus corporis quibusdam impedit saepe nisi rerum
+          assumenda sit iure quasi voluptas, rem mollitia, fugit excepturi fuga
+          expedita.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi sit
+          quidem doloribus culpa ullam quaerat, consequuntur mollitia nam. Rem
+          ut vitae fugiat laudantium dicta accusantium nesciunt cupiditate nam
+          provident. Itaque.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid hic
+          in consequuntur doloribus corporis quibusdam impedit saepe nisi rerum
+          assumenda sit iure quasi voluptas, rem mollitia, fugit excepturi fuga
+          expedita.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi sit
+          quidem doloribus culpa ullam quaerat, consequuntur mollitia nam. Rem
+          ut vitae fugiat laudantium dicta accusantium nesciunt cupiditate nam
+          provident. Itaque.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid hic
+          in consequuntur doloribus corporis quibusdam impedit saepe nisi rerum
+          assumenda sit iure quasi voluptas, rem mollitia, fugit excepturi fuga
+          expedita.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi sit
+          quidem doloribus culpa ullam quaerat, consequuntur mollitia nam. Rem
+          ut vitae fugiat laudantium dicta accusantium nesciunt cupiditate nam
+          provident. Itaque.
+        </p>
+      </div>
+      <div class="footer">Develop with Love by Nirvana</div>
+    </div>
+  </body>
+</html>

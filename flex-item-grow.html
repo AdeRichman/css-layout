@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Item Grow</title>
+    <!-- Flex Item Grow (flex-grow) adalah kemampuan item fleksibel untuk berkembang jika diperlukan dan kita bisa mengatur kemampuan
+    flex grow dari tiap item -->
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+      .content {
+        background-color: beige;
+        border: 0.1rem solid black;
+        margin: 0.6rem;
+        padding: 0.6rem;
+        font-size: 3vw;
+      }
+      .small {
+        flex-grow: 1;
+      }
+      .large {
+        flex-grow: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content small">A</div>
+      <div class="content large">B</div>
+      <div class="content small">C</div>
+      <div class="content large">D</div>
+      <div class="content small">E</div>
+    </div>
+  </body>
+</html>

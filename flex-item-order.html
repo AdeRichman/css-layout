@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Item Order</title>
+    <!-- Flex item merupakan anak langsung (child) dari sebuah container. Secara default, urutan flex item akan ditampilkan 
+      sesuai dengan kode urutan html yang kita buat, Flex Item Order (order) digunakan untuk mengubah urutan flex item
+      yang ingin ditampilkan. -->
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .content {
+        width: 28rem;
+        background-color: beige;
+        color: black;
+        margin: 0.6rem;
+        padding: 0.6rem;
+        border: 0.1rem solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content" style="order: 3">
+        <h1>Ini Konten 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+          obcaecati laboriosam doloremque reiciendis, omnis alias odio accusamus
+          quisquam nemo ab neque saepe aut, iusto eveniet eligendi esse nulla
+          quidem rerum.
+        </p>
+      </div>
+      <div class="content" style="order: 1">
+        <h1>Ini Konten 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+          obcaecati laboriosam doloremque reiciendis, omnis alias odio accusamus
+          quisquam nemo ab neque saepe aut, iusto eveniet eligendi esse nulla
+          quidem rerum.
+        </p>
+      </div>
+      <div class="content" style="order: 2">
+        <h1>Ini Konten 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+          obcaecati laboriosam doloremque reiciendis, omnis alias odio accusamus
+          quisquam nemo ab neque saepe aut, iusto eveniet eligendi esse nulla
+          quidem rerum.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
